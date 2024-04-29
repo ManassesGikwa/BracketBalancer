@@ -73,3 +73,17 @@ function isBalanced(brackets) {
         }
    return stack.length ==0;
     }
+
+    // Unit tests for isBalanced function
+
+// Test case 1: 
+const test1 = "[()]{}{[()()]()}";
+console.log(`Test case 1: ${isBalanced(test1) ? 'Pass' : 'Fail'}`);
+
+// Test case 2: 
+const test2 = "([{}])";
+console.log(`Test case 2: ${isBalanced(test2) ? 'Pass' : 'Fail'}`);
+
+// Test case 3: 
+const test3 = "{(})[]";
+console.log(`Test case 3: ${!isBalanced(test3) ? 'Pass' : 'Fail'}`);
